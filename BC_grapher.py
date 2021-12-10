@@ -10,7 +10,7 @@ import lb
 import sem
 import cp
 def main(): #identify what type of graph is desired
-    loc = input('Where would you like the graph to be saved? \n File Path: ')
+    loc = input('Where would you like the graph to be saved? \n File Path: ') + '/'
     graph = input("What kind of graph would you like to make? \n Linear Line of Best Fit: lbf \n Lineweaver-Burk: lb \n Points with SEM bars: sem \n Connected Points: cp \n Enter the key letters: "  )
     if graph == 'lbf':   # call that graph's function
         lbf.lbf(loc)
